@@ -150,7 +150,7 @@ sleep-chart > year > month > label
 /*<editor-fold desc="Chart - Days">*/
 sleep-chart > year > month > day
 {
-    width: 16px;
+    width: 40px;
 
     display:       inline-block;
     position:      relative;
@@ -177,7 +177,8 @@ sleep-chart > year > month > day > label
 /*<editor-fold desc="Chart - Sleep bars">*/
 sleep-chart > year > month > day > sleep
 {
-    width: 100%;
+    width: 34px;
+    margin: 0px 3px;
 
     background: #6F8A91;
     position:   absolute;

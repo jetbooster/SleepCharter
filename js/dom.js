@@ -10,7 +10,7 @@ function generateTimeAxis()
 
     timeAxis.className = "axis";
 
-    for (var h = 23; h >= 0; h--)
+    for (var h = 0; h <= 23; h++)
     {
         var hourBox = document.createElement("div");
 
@@ -198,20 +198,20 @@ function rescaleSingleSleep()
         if (bar.isTopBar)
         {
             height = 1440 - getMinutesOfDay(from);
-            bar.style.top    = "0px";
+            bar.style.bottom    = "0px";
             bar.style.height = ( (height * minuteHeight) | 0 ) + "px";
         }
         else
         {
             height = getMinutesOfDay(to);
-            bar.style.bottom = "0px";
+            bar.style.top = "0px";
             bar.style.height = ( (height * minuteHeight) | 0 ) + "px";
         }
     }
     else
     {
         height = getMinutesOfDay(to) - getMinutesOfDay(from);
-        bar.style.bottom = ( (getMinutesOfDay(from) * minuteHeight) | 0 ) + "px";
+        bar.style.top = ( (getMinutesOfDay(from) * minuteHeight) | 0 ) + "px";
         bar.style.height = ( (height * minuteHeight) | 0 ) + "px";
     }
 

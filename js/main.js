@@ -76,8 +76,6 @@ function processData(data)
 {
     STATE.entries = parseCSV(data);
     STATE.entries.sort(sortByFromTimes);
-
-    STATE.entries = predictEvents(STATE.entries);
 }
 
 function processDOM()

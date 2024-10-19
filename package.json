@@ -1,0 +1,39 @@
+{
+  "name": "sleep-charter",
+  "version": "1.0.0",
+  "description": "**SleepCharter** is a custom web app, that generates a sleep chart based on my dogs sleep data. [You can see it live by clicking this link][4].",
+  "main": "index.js",
+  "scripts": {
+    "run": "ts-node parser/generate-csv.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetbooster/SleepCharter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jetbooster/SleepCharter/issues"
+  },
+  "homepage": "https://github.com/jetbooster/SleepCharter#readme",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "dotenv": "^16.4.5",
+    "google-auth-library": "^9.14.2",
+    "googleapis": "^144.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "uri-js-replace": "^1.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.10.0"
+  },
+  "overrides": {
+    "uri-js": "npm:uri-js-replace"
+  }
+}

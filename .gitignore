@@ -1,1 +1,6 @@
-.idea/
+node_modules
+sleepData.csv
+.env
+generator/cache
+generator/build
+
